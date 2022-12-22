@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 48, 54);
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#grid-margin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 8, 8);
+    border-radius: 20px;
+    padding: 0 70px 70px 70px;
+}
+
+#grid-text {
+    background: none;
+    margin-top: 0;
+    padding: 20px;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
+}
+
+#grid {
+    width: 40rem;
+    height: 40rem;
+
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    gap: 1px;
+}
+
+
+.grid16 {
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid32 {
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+}
+
+.cell {
+    background-color: rgb(255, 255, 255);
+}
+
+.cell:hover {
+    background-color: black;
+}
+
+
