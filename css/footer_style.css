@@ -1,0 +1,39 @@
+footer {
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer > h3 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+footer > h3 > a:link, 
+a:visited,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-logos {
+    padding: 5px;
+    width: 22px;
+}
+
+.links-footer > a:hover {
+    transition: .3s ease-in-out;
+    transform: rotate(360deg) scale(1.05);
+}

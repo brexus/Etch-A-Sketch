@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(44, 48, 54);
-    color: white;
+    color: rgb(235, 213, 19);
 }
 
 #grid-margin {
@@ -19,9 +19,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 8, 8);
+    background-color: rgb(196, 65, 65);
     border-radius: 20px;
-    padding: 0 70px 0 70px;
+    padding: 0 70px 70px 70px;
 }
 
 #grid-text {
@@ -34,18 +34,10 @@ body {
 #grid {
     width: 40rem;
     height: 40rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     display: grid;
     gap: 1px;
 }
-
-#fotter {
-    font-size: 1em;
-    background: none;
-    font-family: 'Lobster', cursive;
-    padding: 20px;
-}
-
 
 .grid16 {
     grid-template-columns: repeat(16, 1fr);
