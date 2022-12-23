@@ -7,28 +7,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/footer_style.css">
     <link rel="stylesheet" href="./css/main_style.css">
-    <script src="./js/main_script.js"></script>
 </head>
 <body>
+<div id="main">
 
     <div id="grid-margin">
         <div id="grid-text">Etch A Sketch</div>
-        <div id="grid"></div>
+        <div id="grid-container"></div>
+        <div id="buttons-container">
+            <div data-key="0" id="button">16x16</div>
+            <div data-key="1" id="button">32x32</div>
+            <div data-key="2" id="button">64x64</div>
+            <div class="erase" id="button">Erase</div>
+        </div>
     </div>
+
     <footer>
         <h3>Created by brexus © | For The Odin Project</h3>
         <div class="links-footer">
             <a href="https://github.com/brexus"><img class="small-logos" src="./img/github.png" alt=""></a>
             <a href="http://instagram.com/xbrexus"><img class="small-logos" src="./img/instagram.png" alt=""></a>
         </div>
-
     </footer>
-    
 
-    
-
-    <script>
-        make_grid(16);
-    </script>
+</div>
+<script src="./js/main_script.js"></script>
 </body>
 </html>

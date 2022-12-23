@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,400;0,900;1,900&display=swap');
 
 * {
     margin: 0;
@@ -6,12 +7,33 @@
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(44, 48, 54);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#grid-text {
     color: rgb(235, 213, 19);
+    margin-top: 0;
+    padding: 20px;
+    font-size: 4em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    /* font-family: 'Lobster', cursive; */
 }
 
 #grid-margin {
@@ -21,22 +43,33 @@ body {
     align-items: center;
     background-color: rgb(196, 65, 65);
     border-radius: 20px;
-    padding: 0 70px 70px 70px;
+    padding: 0 70px 0px 70px;
 }
 
-#grid-text {
-    margin-top: 0;
-    padding: 20px;
-    font-size: 4em;
-    font-family: 'Lobster', cursive;
-}
-
-#grid {
+#grid-container {
     width: 40rem;
     height: 40rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(212, 212, 212);
     display: grid;
     gap: 1px;
+    
+}
+
+.grid {
+    width: 40rem;
+    height: 40rem;
+    background-color: rgb(212, 212, 212);
+    display: grid;
+    gap: 1px;
+    
+}
+
+.cell {
+    background-color: rgb(202, 193, 193);
+}
+
+.cell:hover {
+    background-color: black;
 }
 
 .grid16 {
@@ -49,12 +82,36 @@ body {
     grid-template-rows: repeat(32, 1fr);
 }
 
-.cell {
-    background-color: rgb(255, 255, 255);
-}
-
-.cell:hover {
-    background-color: black;
+.grid64 {
+    grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr);
 }
 
 
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px 0 10px;
+}
+
+#button {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 55px;
+    cursor: pointer;
+}
+
+#button:hover {
+    transform: scale(1.05);
+}
+
+#button:active {
+    transform: scale(1.1);
+}
